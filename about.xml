@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/wallpaper_android">
+
+    <!-- Decorative Divider Line -->
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/imageViewProfile"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="16dp" />
+
+    <!-- ImageView for Image -->
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="134dp"
+        android:layout_height="162dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/Gambar_Saya" />
+
+    <!-- TextView for Developer Details -->
+    <TextView
+        android:id="@+id/textViewDeveloperDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by: "
+        android:textSize="18sp"
+        android:layout_below="@+id/dividerLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"/>
+
+    <!-- TextView for Name (Centered) -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SH MOHAMAD SHAHRIL AZRI SH NURSHAHBUDIN"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewDeveloperDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"/>
+
+    <!-- TextView for Matrix Number -->
+    <TextView
+        android:id="@+id/textViewMatrixNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021899072"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"/>
+
+    <!-- TextView for Group -->
+    <TextView
+        android:id="@+id/textViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group: RCS2405A"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewMatrixNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textViewProgrammeCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programme Code: CS240"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"/>
+
+    <!-- Decorative Divider Line -->
+    <View
+        android:id="@+id/dividerLine2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textViewProgrammeCode"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView for Additional Information -->
+    <TextView
+        android:id="@+id/textViewAdditionalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Information:\nThis application is about zakat calculator\non gold that you wear or keep."
+        android:textSize="16sp"
+        android:layout_below="@+id/dividerLine2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+
+    <!-- TextView for Application Website URL -->
+    <TextView
+        android:id="@+id/textViewAppWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAdditionalInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#FFEB3B"
+        android:text="Source Code"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <!-- Decorative Divider Line -->
+    <View
+        android:id="@+id/dividerLine3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textViewAppWebsite"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView for Copyright Statement (Moved to the bottom) -->
+    <TextView
+        android:id="@+id/textViewCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dividerLine3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Copyright © 2023"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

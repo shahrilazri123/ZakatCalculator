@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_android"
+    android:foregroundTint="#03A9F4"
+    android:padding="16dp">
+
+    <!-- Form 1: Weight of the gold in grams -->
+    <TextView
+        android:id="@+id/textViewForm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonClear"
+        android:layout_marginTop="16dp"
+        android:text="Weight of the Gold (g)"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:ignore="NotSibling" />
+
+    <!-- Form 1: Weight of the gold in grams -->
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewForm1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_capsule_background"
+        android:hint="Enter Weight of the Gold (g)"
+        android:inputType="numberDecimal"
+        android:textColor="#FFEB3B"
+        android:textColorHint="@color/grey"
+        android:visibility="visible" />
+
+    <!-- Form 2: Current gold value per gram -->
+
+    <!-- Form 2: Current gold value per gram -->
+
+    <TextView
+        android:id="@+id/textViewForm2"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextWeight"
+        android:layout_marginTop="2dp"
+        android:text="Current Gold Value per Gram (RM)"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextGoldValue"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextWeight"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_capsule_background"
+        android:hint="Enter Current Gold Value per Gram (RM)"
+        android:inputType="numberDecimal"
+        android:textColor="#FFEB3B"
+        android:textColorHint="@color/grey" />
+
+    <TextView
+        android:id="@+id/textViewGoldType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextGoldValue"
+        android:layout_marginTop="8dp"
+        android:text="Choose type of gold"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerGoldType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGoldType"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_border" />
+
+    <!-- Linear layout for buttons -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerGoldType"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calculate" />
+
+        <!-- Clear Button -->
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:text="Clear" />
+    </LinearLayout>
+
+    <!-- Decorative Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="330sp" />
+
+    <!-- Title for Results -->
+    <TextView
+        android:id="@+id/textViewResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:shadowColor="@color/black"
+        android:text="Result"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:underline="true" />
+
+    <!-- TextViews for Results -->
+
+    <TextView
+        android:id="@+id/textViewTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResultTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Total Gold Value (RM): 0.00"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewZakatPayable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotalValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Zakat Payable Value (RM): 0.00"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewTotalZakat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewZakatPayable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Total Zakat (RM): 0.00"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Decorative Divider Line -->
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="530sp" />
+
+    <TextView
+        android:id="@+id/textViewCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="545dp"
+        android:text="Copyright © 2023"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>
